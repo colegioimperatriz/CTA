@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curso Técnico em Agropecuária do Colégio Imperatriz Dona Leopoldina - Formação prática e teórica com alta qualidade no agronegócio.">
+    <meta name="keywords" content="Curso Técnico, Agropecuária, Colégio Imperatriz, Educação Profissional, Técnico em Agropecuária, Curso no Paraná">
+    <meta property="og:title" content="Curso Técnico em Agropecuária - Colégio Imperatriz Dona Leopoldina">
+    <meta property="og:description" content="Faça o Curso Técnico em Agropecuária no Colégio Imperatriz e obtenha um diploma de Técnico com uma formação completa e prática no agronegócio.">
+    <meta property="og:image" content="https://www.colegioimperatriz.net.br/img/curso-tecnico-agropecuaria-logo.png">
+    <meta property="og:url" content="https://www.colegioimperatriz.net.br/curso-tecnico-agropecuaria">
+    <meta property="og:type" content="website">
+    <title>Curso Técnico em Agropecuária | Colégio Imperatriz Dona Leopoldina</title>
+
+    <!-- Link para fontes otimizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Otimização da folha de estilo -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #124f3b;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px 0;
+            background-color: #124f3b;
+            text-align: center;
+        }
+
+        header img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-image: url('https://www.colegioimperatriz.net.br/img/FotoCTA.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .cta-btn {
+            background-color: #f1c40f;
+            color: #124f3b;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #e0b80d;
+            transform: scale(1.05);
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tab-buttons {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            margin-bottom: 10px;
+            text-align: center;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .tab-button {
+            padding: 15px 30px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            cursor: pointer;
+            border: 1px solid #ffffff;
+            border-bottom: none;
+            transition: 0.3s;
+            flex: 1;
+        }
+
+        .tab-button:hover,
+        .tab-button.active {
+            background-color: #76bc7d;
+            color: #124f3b;
+        }
+
+        .tab-content {
+            display: none;
+            background-color: #124f3b;
+            padding: 30px 15%;
+            color: #fff;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #124f3b;
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+
+        footer p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            font-size: 2em;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer .social-icons a:hover {
+            color: #f1c40f;
+        }
+
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 2em;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #fff;
+            color: #128C7E;
+        }
+
+        .map-container {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .cta-btn {
+                padding: 12px 20px;
+                font-size: 1.1em;
+            }
+
+            .tab-content {
+                padding: 20px 10%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .cta-btn {
+                padding: 10px 15px;
+                font-size: 1em;
+            }
+
+            .tab-buttons {
+                flex-direction: column;
+            }
+
+            .tab-button {
+                padding: 12px 20px;
+                font-size: 1.1em;
+            }
+
+            .tab-content {
+                padding: 20px 5%;
+            }
+
+            footer p {
+                font-size: 1em;
+            }
+
+            footer .social-icons a {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://www.colegioimperatriz.net.br/img/curso-tecnico-agropecuaria-logo.png" alt="Curso Técnico Agropecuária">
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Curso Técnico em Agropecuária</h1>
+            <p>Adquira uma formação completa e prática para atuar no agronegócio com o Colégio Imperatriz.</p>
+            <a href="https://wa.me/5542991153063?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20Curso%20Técnico%20em%20Agropecuária!" target="_blank" class="cta-btn">Inscreva-se Agora</a>
+        </div>
+    </section>
+
+    <section class="tabs">
+        <div>
+            <div class="tab-buttons">
+                <div class="tab-button active" data-target="sobre-curso">Sobre o Curso</div>
+                <div class="tab-button" data-target="duracao-funcionamento">Duração e Funcionamento</div>
+                <div class="tab-button" data-target="perfil-profissional">Perfil Profissional</div>
+                <div class="tab-button" data-target="diferenciais-curso">Diferenciais do Curso</div>
+            </div>
+
+            <div class="tab-content active" id="sobre-curso">
+                <h2>Sobre o Curso</h2>
+                <p>A educação profissional, nos dias atuais, além de agregar valor à carreira do trabalhador, passou a ser uma exigência do mercado de trabalho. Jovens e adultos que não possuem tempo para dedicar-se à sua formação ou, por falta de tempo ou por longas distâncias a serem percorridas entre trabalho, escola e residência, mas que buscam sua inserção no mundo do trabalho de forma competitiva, encontram nesta modalidade de ensino possibilidades de continuar sua formação ou ainda especializar-se em áreas de trabalho já atuantes.</p>
+                <p>Considera-se, assim, esta proposta (80% presencial e 20% EaD) como um diferencial e uma real oportunidade para que mais jovens possam ingressar no mundo do trabalho através da educação profissional. O curso conta com professores qualificados que aliam a teoria de sala de aula à prática cotidiana do aluno.</p>
+            </div>
+
+            <div class="tab-content" id="duracao-funcionamento">
+                <h2>Duração e Funcionamento</h2>
+                <p>As aulas do Curso Técnico ocorrem somente aos sábados, das 7h30min às 17h30min, totalizando 10 aulas de 50 min cada. O curso tem duração de 3 anos, sendo 80 % da grade com aulas presenciais e 20% em EaD.</p>
+                <p>O colégio conta com uma área experimental onde são desenvolvidas as atividades práticas e onde o aluno pode vivenciar os problemas reais do agronegócio.</p>
+            </div>
+
+            <div class="tab-content" id="perfil-profissional">
+                <h2>Perfil Profissional do Egresso</h2>
+                <p>Ao concluir o curso, o Técnico em Agropecuária deverá ter as seguintes competências: Maneja de forma sustentável a fertilidade do solo e os recursos naturais; Planeja e executa projetos ligados a sistemas de irrigação e uso da água; Seleciona, produz e aplica insumos (sementes, fertilizantes, defensivos, pastagens, concentrados, sal mineral, medicamentos e vacinas); Desenvolve estratégias para reserva de alimentação animal e água; Realiza atividades de produção de sementes e mudas, transplantio e plantio.</p>
+            </div>
+
+            <div class="tab-content" id="diferenciais-curso">
+                <h2>Diferenciais do Curso</h2>
+                <ul>
+                    <li>Curso presencial com carga horária prática e teórica.</li>
+                    <li>Área experimental onde são desenvolvidas as atividades práticas do agronegócio.</li>
+                    <li>Avaliações diferenciadas e simulados online com provas integradas.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-container">
+        <h2>Localização</h2>
+        <iframe src="https://maps.google.com/maps?q=Av.%20Michael%20Moor,%202097%20Entre%20Rios%20-%20Guarapuava%2FPR&t=k&z=13&ie=UTF8&iwloc=&output=embed&layer=c"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Colégio Imperatriz Dona Leopoldina - Todos os direitos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/colegioimperatrizdonaleopoldina" target="_blank" class="fab fa-facebook"></a>
+            <a href="https://www.instagram.com/colegio_imperatriz/" target="_blank" class="fab fa-instagram"></a>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5542991153063?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20o%20Curso%20Técnico%20em%20Agropecuária!" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        const tabs = document.querySelectorAll('.tab-button');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = document.getElementById(tab.getAttribute('data-target'));
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+                document.querySelectorAll('.tab-button').forEach(button => button.classList.remove('active'));
+                tab.classList.add('active');
+                target.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
